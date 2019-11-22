@@ -1,7 +1,5 @@
 #include <ros/ros.h>
 #include <std_msgs/String.h>
-#include <geometry_msgs/Twist.h>
-#include <math.h>
 
 void sendToTurtlebot(const std_msgs::String::ConstPtr& msg){
 ROS_INFO("I heard: [%s]", msg->data.c_str());
