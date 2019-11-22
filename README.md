@@ -37,8 +37,9 @@ Helpful Tools
 
 1. Beginner ROS tutorials. To get an understanding of ROS concepts with turtlebot3.  
 https://drive.google.com/open?id=17emlH6L7_blEymenJEvQoIVju6Mz8Z43
-2. This is my powerpoint presentation for this project (Including informal video showing project execution).
+2. This is my powerpoint presentation for this project plus an informal video showing project execution.
 https://drive.google.com/open?id=1b6aFNyqh5kpTDeSjU4HXHJXOQLPLrXJQ
+https://youtu.be/t0xgeniSS-4
 3. Very helpful books for anyone just getting started with ROS. I highly recomend these books, having read it all. 
 -Lentin Joseph - Robot Operating System (ROS) for Absolute Beginners Robotics Programming Made Easy-Apress (2018)
 -Morgan Quigley, Brian Gerkey, William D. Smart - Programming Robots with ROS_ A Practical Introduction to the Robot Operating System-O'Reilly Media (2015)
