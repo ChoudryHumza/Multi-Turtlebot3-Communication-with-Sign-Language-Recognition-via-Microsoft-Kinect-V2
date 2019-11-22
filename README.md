@@ -93,6 +93,11 @@ This requires creating a publisher node (sends data) in visual studio and a subs
 All concepts will be broken down and throughly explained below. 
 
 
+
+
+
+
+
 PART ONE-Visual Studio & MATLAB:
 
 1) Open up visual studio and MATLAB. Start a new C# console project in visual studio. If you cannot find the C# console option, use the link below for instructions how too "Install more tools and features" using the link below. 
