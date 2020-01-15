@@ -1,20 +1,20 @@
 # Multi-Turtlebot3-Communication-with-Sign-Language-Recognition-via-Microsoft-Kinect-V2
 
-Table of Contents
+**Table of Contents**
 
-Description
-Takeaway
-Helpful Tools
-Requirments
-Software Versions Used
-Downloading Software
-Overview
-PART ONE - VISUAL STUDIO & ROS
-PART TWO - ROS 
-PART THREE RUNNING THE PROGRAMS
+- Description
+- Takeaway
+- Helpful Tools
+- Requirments
+- Software Versions Used
+- Downloading Software
+- Overview
+- PART ONE - VISUAL STUDIO & ROS
+- PART TWO - ROS 
+- PART THREE RUNNING THE PROGRAMS
 
 
-Description
+**Description**
 
 The Microsoft Kinect V2 camera interprets a sign language gesture that is done in ASL (American Sign Language). This program is implemented in visual studio on a computer running windows. Once this gesture is picked up, it sends a command based on the gesture to another computer running Linux Ubuntu. This is where the ROS master is running. Once the command or string is recieved by the ROS master, it communicates this to the turtlebot3. The turtlebot3 then excecutes this command. 
 For example, in order to tell the robot to go forward, you can do a sign or gesture (in ASL) in front of the Microsoft Kinect. This would be interpreted by the visual studio program, which would then send a "go forward" command to the ROS program running on another machine. The ROS program would then send this command to the turtlebot3, which would then excecute this command and start moving forward at a set speed, until a command to stop it is sent. 
@@ -26,14 +26,15 @@ Link to sign language recognition via Microsoft Kinect V2 (Benjamin Jenney Proje
 https://github.com/BenjaminJenney/ASL_Navigation_of_NAO_Robot
 
 
-Takeaway
+**Takeaway**
 
 Even if you are not implementing this entire project, there are certain things you can takeaway to implement into your own project.  Below is a list of things you can learn to do from this project.
 1. How to communicate between a computer running windows and another running ubuntu. In order to accomplish communication with ROS.  
 2. Use ROS via matlab on windows. Independent of a ROS distribution and ubuntu. Ros master running on matlab.   
 3. Understand how to implement multiple turtlebot3's on a single ros master, on a computer running Ubuntu. 
 
-Helpful Tools
+
+**Helpful Tools**
 
 1. Beginner ROS tutorials. To get an understanding of ROS concepts with turtlebot3.  
 https://drive.google.com/open?id=17emlH6L7_blEymenJEvQoIVju6Mz8Z43
@@ -45,48 +46,48 @@ https://youtu.be/t0xgeniSS-4
 -Morgan Quigley, Brian Gerkey, William D. Smart - Programming Robots with ROS_ A Practical Introduction to the Robot Operating System-O'Reilly Media (2015)
 
 
-Requirments 
+**Requirments:** 
 
-Computer running any verision of Windows.
-MATLAB with Robotic System Toolbox (Addon) on windows computer. MATLAB is free for only 30 days. At the time of writing this, the application did allow me to renew the trial (additional 30 days). If you are a college student, you may be able to download it for free (indefinetly).
-Visual Studio (Any verision that supports referencing another application (e.g. Matlab)). 
-Any verision of the Robotic Operating System (ROS) on a computer running Ubuntu.
+- Computer running any verision of Windows.
+- MATLAB with Robotic System Toolbox (Addon) on windows computer. MATLAB is free for only 30 days. At the time of writing this, the application did allow me to renew the trial (additional 30 days). If you are a college student, you may be able to download it for free (indefinetly).
+- Visual Studio (Any verision that supports referencing another application (e.g. Matlab)). 
+- Any verision of the Robotic Operating System (ROS) on a computer running Ubuntu.
 
 
-Software Verisions Used
+**Software Verisions Used**
  
  These are the verisions of the software that was used during implementation and testing of this project. 
- ROS Kinetic Kame 
- Ubuntu 16.04 LTS
- Windows 10
- MATLAB R2019b 
- Visual Studio 2019
+ - ROS Kinetic Kame 
+ - Ubuntu 16.04 LTS
+ - Windows 10
+ - MATLAB R2019b 
+ - Visual Studio 2019
  
  
-Downloading Software
+**Downloading Software**
 
-ROS 
+- ROS 
  Follow the instructions provided in the link below to download ROS Kinetic Kame. 
  http://wiki.ros.org/kinetic/Installation/Ubuntu
  You can also use another distribution (version) of ROS as well. Link below. Click on the desired distribution and follow the the installtion instructions.  
  http://wiki.ros.org/Distributions
  
- Visual Studio 2019 
+- Visual Studio 2019 
  https://visualstudio.microsoft.com/vs/
  
- MATLAB R2019b + Robotic System Toolbox. Make sure you check off to include the addon "Robotic System Toolbox" with MATLAB download.  
+- MATLAB R2019b + Robotic System Toolbox. Make sure you check off to include the addon "Robotic System Toolbox" with MATLAB download.  
  https://www.mathworks.com/products/robotics.html
  
- Ubuntu 16.04 LTS
+- Ubuntu 16.04 LTS
  http://releases.ubuntu.com/16.04/
  
- Turtlebot3 dependent packages to control the robot. 
+ - Turtlebot3 dependent packages to control the robot. 
  6.2.2.3 Install Dependent Packages ONLY. Do not continue on to 6.2.2.4 USB Settings. Unless you know what your doing. I will explain everything in detail. As in, how to establish communication with turtlebot and your computer. 
  If you have not built your turtlebot and need to do a full setup (hardware and software). Please follow the full instruction set provided in the link below (From 1 to 6) to get started.
  http://emanual.robotis.com/docs/en/platform/turtlebot3/joule_setup/
 
 
-Overview:
+**Overview:**
 
 Below are steps on how to establish a communication betweem windows visual studio and ubuntu ros. 
 This requires creating a publisher node (sends data) in visual studio and a subscriber node (recieves data) on the Ubuntu machine running ROS. 
@@ -98,7 +99,7 @@ All concepts will be broken down and throughly explained below.
 
 
 
-PART ONE-Visual Studio & MATLAB:
+**PART ONE-Visual Studio & MATLAB:**
 
 1) Open up visual studio and MATLAB. Start a new C# console project in visual studio. If you cannot find the C# console option, use the link below for instructions how too "Install more tools and features" using the link below. 
 https://docs.microsoft.com/en-us/visualstudio/get-started/csharp/tutorial-console?view=vs-2019
@@ -195,7 +196,7 @@ We created a MATLAB instance to excecute matlab commands. Then we created a publ
 Next we will discuss how to create a subscriber node in ROS on the Ubuntu computer. 
 
 
-PART TWO-ROS:
+**PART TWO-ROS:**
 
 1) Start the computer that is running the Ubuntu operating system. Make sure that you have ROS installed already. The download link for ROS is stated above under requirments. 
 
@@ -336,7 +337,7 @@ http://wiki.ros.org/ROS/Tutorials/WritingPublisherSubscriber%28python%29
   This will be print anything right now becuase we have not started our visual studio program that has the publisher node.
   
   
-PART THREE RUNNING THE PROGRAMS:
+**PART THREE RUNNING THE PROGRAMS:**
 
 Now we will run the programs. 
 
@@ -359,7 +360,7 @@ Now we will run the programs.
  8) To exit the ROS program you can hit control+c. To shut down ROS master you can do the same. 
  
  
-Possible issues:
+**Possible issues:**
 
 Following is a list of possible issues I predict you may run into:
 1) Public wifi: Try using a hotspot or your personal wifi network.
