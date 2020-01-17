@@ -1,4 +1,4 @@
-# Multi-Turtlebot3 Communication with Sign Language Recognition via Microsoft-Kinect-V2
+# Multi-Turtlebot3 Communication with Sign Language Recognition via Microsoft Kinect-V2
 
 **Table of Contents**
 
@@ -21,7 +21,7 @@ For example, in order to tell the robot to go forward, you can do a sign or gest
 
 There are two parts to this project. The first part is sign language recognition using Microsoft Kinect V2. This part is done by my research partner Benjamin Jenney. Instructions on how to implement this are on Benjamins github page (link below). The second part is communicating with ROS running on a separate machine from the visual studio program running on a windows computer. It also involves creating a ROS package to communicate with the turtlebot. This part is done by me and is illustrated in depth here. 
 
-This project is currently in the works, but progess has been had. 
+This project is currently in the works, but great progess has been made. 
 
 Link to sign language recognition via Microsoft Kinect V2 (Benjamin Jenney Project) 
 https://github.com/BenjaminJenney/ASL_Navigation_of_NAO_Robot
